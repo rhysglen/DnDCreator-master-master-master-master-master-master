@@ -17,10 +17,10 @@ namespace DnDCreator
         public charScreen3()
         {
             InitializeComponent();
-            
-            // background skills
 
-            if (Character.background == "Acolyte")
+            //  skills limit
+           
+            if (Form1.newCharacter.background == "Acolyte")
             {
                 insButton.Checked = true;
                 religButton.Checked = true;
@@ -29,7 +29,7 @@ namespace DnDCreator
             }
 
             // class skill choices
-            if (Character.type == "Barbarian")
+            if (Form1.newCharacter.type == "Barbarian")
             {
                 skillNum = skillNum + 2;
 
@@ -40,7 +40,7 @@ namespace DnDCreator
                 natButton.Enabled = true;
                 percButton.Enabled = true;
             }
-            else if (Character.type == "Bard")
+            else if (Form1.newCharacter.type == "Bard")
             {
                 skillNum = skillNum + 3;
 
@@ -64,7 +64,7 @@ namespace DnDCreator
                 persuaButton.Enabled = true;
             }
 
-            else if (Character.type == "Cleric")
+            else if (Form1.newCharacter.type == "Cleric")
             {
                 skillNum = skillNum + 2;
 
@@ -75,7 +75,7 @@ namespace DnDCreator
                 religButton.Enabled = true;
 
             }
-            else if (Character.type == "Druid")
+            else if (Form1.newCharacter.type == "Druid")
             {
                 skillNum = skillNum + 2;
 
@@ -89,7 +89,7 @@ namespace DnDCreator
                 survButton.Enabled = true;
 
             }
-            else if (Character.type == "Fighter")
+            else if (Form1.newCharacter.type == "Fighter")
             {
                 skillNum = skillNum + 2;
 
@@ -103,7 +103,7 @@ namespace DnDCreator
                 survButton.Enabled = true;
 
             }
-            else if (Character.type == "Monk")
+            else if (Form1.newCharacter.type == "Monk")
             {
                 skillNum = skillNum + 2;
 
@@ -115,7 +115,7 @@ namespace DnDCreator
                 stealthButton.Enabled = true;
 
             }
-            else if (Character.type == "Paladin")
+            else if (Form1.newCharacter.type == "Paladin")
             {
                 skillNum = skillNum + 2;
 
@@ -127,7 +127,7 @@ namespace DnDCreator
                 persuaButton.Enabled = true;
 
             }
-            else if (Character.type == "Ranger")
+            else if (Form1.newCharacter.type == "Ranger")
             {
                 skillNum = skillNum + 3;
 
@@ -141,7 +141,7 @@ namespace DnDCreator
                 survButton.Enabled = true;
 
             }
-            else if (Character.type == "Rogue")
+            else if (Form1.newCharacter.type == "Rogue")
             {
                 skillNum = skillNum + 4;
 
@@ -157,7 +157,7 @@ namespace DnDCreator
                 perfButton.Enabled = true;
                 persuaButton.Enabled = true;
             }
-            else if (Character.type == "Sorcerer")
+            else if (Form1.newCharacter.type == "Sorcerer")
             {
                 skillNum = skillNum + 2;
 
@@ -169,7 +169,7 @@ namespace DnDCreator
                 religButton.Enabled = true;
 
             }
-            else if (Character.type == "Warlock")
+            else if (Form1.newCharacter.type == "Warlock")
             {
                 skillNum = skillNum + 2;
 
@@ -182,7 +182,7 @@ namespace DnDCreator
                 natButton.Enabled = true;
 
             }
-            else if (Character.type == "Wizard")
+            else if (Form1.newCharacter.type == "Wizard")
             {
                 skillNum = skillNum + 2;
 
@@ -194,30 +194,101 @@ namespace DnDCreator
                 religButton.Enabled = true;
 
             }
-            // limiter for skills
-            if (skillNum == 0)
-                {
-                    athButton.Enabled = false;
-                    acroButton.Enabled = false;
-                    handButton.Enabled = false;
-                    stealthButton.Enabled = false;
-                    arcaButton.Enabled = false;
-                    hisButton.Enabled = false;
-                    inveButton.Enabled = false;
-                    natButton.Enabled = false;
-                    religButton.Enabled = false;
-                    aniButton.Enabled = false;
-                    insButton.Enabled = false;
-                    medButton.Enabled = false;
-                    percButton.Enabled = false;
-                    survButton.Enabled = false;
-                    decButton.Enabled = false;
-                    intimButton.Enabled = false;
-                    perfButton.Enabled = false;
-                    persuaButton.Enabled = false;
+        }
 
-                }
+
+        private void gameTimer_Tick(object sender, EventArgs e)
+        {
+            if (skillNum == 0)
+            {
+                athButton.Enabled = false;
+                acroButton.Enabled = false;
+                handButton.Enabled = false;
+                stealthButton.Enabled = false;
+                arcaButton.Enabled = false;
+                hisButton.Enabled = false;
+                inveButton.Enabled = false;
+                natButton.Enabled = false;
+                religButton.Enabled = false;
+                aniButton.Enabled = false;
+                insButton.Enabled = false;
+                medButton.Enabled = false;
+                percButton.Enabled = false;
+                survButton.Enabled = false;
+                decButton.Enabled = false;
+                intimButton.Enabled = false;
+                perfButton.Enabled = false;
+                persuaButton.Enabled = false;
             }
+            if (athButton.Checked == true)
+            {
+                Character.skills.Add("Athletics");          
+            }
+            if (acroButton.Checked == true)
+            {
+                Character.skills.Add("Acrobatics");
+            }
+            if (handButton.Checked == true)
+            {
+                Character.skills.Add("Sleight of Hand");
+            }
+            if (stealthButton.Checked == true)
+            {
+                Character.skills.Add("Stealth");
+            }
+            if (arcaButton.Checked == true)
+            {
+                Character.skills.Add("Arcana");
+            }
+            if (hisButton.Checked == true)
+            {
+                Character.skills.Add("History");
+            }
+            if (inveButton.Checked == true)
+            {
+                Character.skills.Add("Investigation");
+            }
+            if (natButton.Checked == true)
+            {
+                Character.skills.Add("Nature");
+            }
+            if (religButton.Checked == true)
+            {
+                Character.skills.Add("Religion");
+            }
+            if (aniButton.Checked == true)
+            {
+                Character.skills.Add("Animal Handling");
+            }
+            if (medButton.Checked == true)
+            {
+                Character.skills.Add("Medicine");
+            }
+            if (percButton.Checked == true)
+            {
+                Character.skills.Add("Perception");
+            }
+            if (survButton.Checked == true)
+            {
+                Character.skills.Add("Survival");
+            }
+            if (decButton.Checked == true)
+            {
+                Character.skills.Add("Deception");
+            }
+            if (intimButton.Checked == true)
+            {
+                Character.skills.Add("Intimidation");
+            }
+            if (perfButton.Checked == true)
+            {
+                Character.skills.Add("Performance");
+            }
+            if (persuaButton.Checked == true)
+            {
+                Character.skills.Add("Persuasion");
+            }
+        }
 
         private void athButton_CheckedChanged(object sender, EventArgs e)
         {
@@ -233,92 +304,7 @@ namespace DnDCreator
         private void skillList()
         {
             //adding skills
-            if (athButton.Checked == true)
-            {
-                Character.skills.Add("Athletics");
-                skillNum--;
-            }
-            if (acroButton.Checked == true)
-            {
-                Character.skills.Add("Acrobatics");
-                skillNum--;
-            }
-            if (handButton.Checked == true)
-            {
-                Character.skills.Add("Sleight of Hand");
-                skillNum--;
-            }
-            if (stealthButton.Checked == true)
-            {
-                Character.skills.Add("Stealth");
-                skillNum--;
-            }
-            if (arcaButton.Checked == true)
-            {
-                Character.skills.Add("Arcana");
-                skillNum--;
-            }
-            if (hisButton.Checked == true)
-            {
-                Character.skills.Add("History");
-                skillNum--;
-            }
-            if (inveButton.Checked == true)
-            {
-                Character.skills.Add("Investigation");
-                skillNum--;
-            }
-            if (natButton.Checked == true)
-            {
-                Character.skills.Add("Nature");
-                skillNum--;
-            }
-            if (religButton.Checked == true)
-            {
-                Character.skills.Add("Religion");
-                skillNum--;
-            }
-            if (aniButton.Checked == true)
-            {
-                Character.skills.Add("Animal Handling");
-                skillNum--;
-            }
-            if (medButton.Checked == true)
-            {
-                Character.skills.Add("Medicine");
-                skillNum--;
-            }
-            if (percButton.Checked == true)
-            {
-                Character.skills.Add("Perception");
-                skillNum--;
-            }
-            if (survButton.Checked == true)
-            {
-                Character.skills.Add("Survival");
-                skillNum--;
-            }
-            if (decButton.Checked == true)
-            {
-                Character.skills.Add("Deception");
-                skillNum--;
-            }
-            if (intimButton.Checked == true)
-            {
-                Character.skills.Add("Intimidation");
-                skillNum--;
-            }
-            if (perfButton.Checked == true)
-            {
-                Character.skills.Add("Performance");
-                skillNum--;
-            }
-            if (persuaButton.Checked == true)
-            {
-                Character.skills.Add("Persuasion");
-                skillNum--;
-
-            }
+           
         }
 
         private void char3NextButton_Click(object sender, EventArgs e)
@@ -331,9 +317,18 @@ namespace DnDCreator
 
         }
 
-        private void gameTimer_Tick(object sender, EventArgs e)
+        private void athButton_CheckedChanged_1(object sender, EventArgs e)
         {
-            skillList();
+            if (athButton.Checked && skillNum > 0)
+            {
+                skillNum--;
+            }
+            else
+            {
+                skillNum++;
+            }
+
+          
         }
     }
 

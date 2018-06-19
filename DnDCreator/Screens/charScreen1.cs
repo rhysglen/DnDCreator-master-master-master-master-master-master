@@ -27,10 +27,10 @@ namespace DnDCreator
         }
         private void button2_Click(object sender, EventArgs e)
         {
-           //adds properties to list
-            Character.race = raceBox.Text;
-            Character.type = typeBox.Text;
-            Character.background = backBox.Text;
+            //adds properties to list
+            Form1.newCharacter.race = raceBox.Text;
+            Form1.newCharacter.type = typeBox.Text;
+            Form1.newCharacter.background = backBox.Text;
 
             Form f = this.FindForm();
             f.Controls.Remove(this);

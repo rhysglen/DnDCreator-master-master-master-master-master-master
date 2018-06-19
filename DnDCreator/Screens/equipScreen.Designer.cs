@@ -39,16 +39,16 @@
             this.other2Button = new System.Windows.Forms.RadioButton();
             this.other1Button = new System.Windows.Forms.RadioButton();
             this.primaryPanel = new System.Windows.Forms.Panel();
+            this.primary1Box = new System.Windows.Forms.ComboBox();
+            this.primary2Box = new System.Windows.Forms.ComboBox();
+            this.primary3Box = new System.Windows.Forms.ComboBox();
+            this.primary3Button = new System.Windows.Forms.RadioButton();
             this.secondPanel = new System.Windows.Forms.Panel();
+            this.second1Box = new System.Windows.Forms.ComboBox();
+            this.second2Box = new System.Windows.Forms.ComboBox();
+            this.second3Box = new System.Windows.Forms.ComboBox();
             this.armorPanel = new System.Windows.Forms.Panel();
             this.otherPanel = new System.Windows.Forms.Panel();
-            this.primay3Button = new System.Windows.Forms.RadioButton();
-            this.primary3Box = new System.Windows.Forms.ComboBox();
-            this.primary2Box = new System.Windows.Forms.ComboBox();
-            this.primary1Box = new System.Windows.Forms.ComboBox();
-            this.second3Box = new System.Windows.Forms.ComboBox();
-            this.second2Box = new System.Windows.Forms.ComboBox();
-            this.second1Box = new System.Windows.Forms.ComboBox();
             this.primaryPanel.SuspendLayout();
             this.secondPanel.SuspendLayout();
             this.otherPanel.SuspendLayout();
@@ -202,11 +202,61 @@
             this.primaryPanel.Controls.Add(this.primary3Box);
             this.primaryPanel.Controls.Add(this.primary1Button);
             this.primaryPanel.Controls.Add(this.primary2Button);
-            this.primaryPanel.Controls.Add(this.primay3Button);
+            this.primaryPanel.Controls.Add(this.primary3Button);
             this.primaryPanel.Location = new System.Drawing.Point(20, 60);
             this.primaryPanel.Name = "primaryPanel";
             this.primaryPanel.Size = new System.Drawing.Size(607, 78);
             this.primaryPanel.TabIndex = 12;
+            // 
+            // primary1Box
+            // 
+            this.primary1Box.BackColor = System.Drawing.Color.Silver;
+            this.primary1Box.Enabled = false;
+            this.primary1Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.primary1Box.FormattingEnabled = true;
+            this.primary1Box.Location = new System.Drawing.Point(54, 34);
+            this.primary1Box.Name = "primary1Box";
+            this.primary1Box.Size = new System.Drawing.Size(121, 32);
+            this.primary1Box.TabIndex = 4;
+            this.primary1Box.Visible = false;
+            // 
+            // primary2Box
+            // 
+            this.primary2Box.BackColor = System.Drawing.Color.Silver;
+            this.primary2Box.Enabled = false;
+            this.primary2Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.primary2Box.FormattingEnabled = true;
+            this.primary2Box.Location = new System.Drawing.Point(235, 34);
+            this.primary2Box.Name = "primary2Box";
+            this.primary2Box.Size = new System.Drawing.Size(121, 32);
+            this.primary2Box.TabIndex = 3;
+            this.primary2Box.Visible = false;
+            // 
+            // primary3Box
+            // 
+            this.primary3Box.BackColor = System.Drawing.Color.Silver;
+            this.primary3Box.Enabled = false;
+            this.primary3Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.primary3Box.FormattingEnabled = true;
+            this.primary3Box.Location = new System.Drawing.Point(416, 34);
+            this.primary3Box.Name = "primary3Box";
+            this.primary3Box.Size = new System.Drawing.Size(121, 32);
+            this.primary3Box.TabIndex = 0;
+            this.primary3Box.Visible = false;
+            // 
+            // primary3Button
+            // 
+            this.primary3Button.AutoSize = true;
+            this.primary3Button.BackColor = System.Drawing.Color.Transparent;
+            this.primary3Button.Enabled = false;
+            this.primary3Button.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.primary3Button.Location = new System.Drawing.Point(416, 15);
+            this.primary3Button.Name = "primary3Button";
+            this.primary3Button.Size = new System.Drawing.Size(14, 13);
+            this.primary3Button.TabIndex = 2;
+            this.primary3Button.TabStop = true;
+            this.primary3Button.UseVisualStyleBackColor = false;
+            this.primary3Button.Visible = false;
             // 
             // secondPanel
             // 
@@ -221,6 +271,42 @@
             this.secondPanel.Name = "secondPanel";
             this.secondPanel.Size = new System.Drawing.Size(607, 76);
             this.secondPanel.TabIndex = 13;
+            // 
+            // second1Box
+            // 
+            this.second1Box.BackColor = System.Drawing.Color.Silver;
+            this.second1Box.Enabled = false;
+            this.second1Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second1Box.FormattingEnabled = true;
+            this.second1Box.Location = new System.Drawing.Point(54, 36);
+            this.second1Box.Name = "second1Box";
+            this.second1Box.Size = new System.Drawing.Size(121, 32);
+            this.second1Box.TabIndex = 8;
+            this.second1Box.Visible = false;
+            // 
+            // second2Box
+            // 
+            this.second2Box.BackColor = System.Drawing.Color.Silver;
+            this.second2Box.Enabled = false;
+            this.second2Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second2Box.FormattingEnabled = true;
+            this.second2Box.Location = new System.Drawing.Point(235, 36);
+            this.second2Box.Name = "second2Box";
+            this.second2Box.Size = new System.Drawing.Size(121, 32);
+            this.second2Box.TabIndex = 7;
+            this.second2Box.Visible = false;
+            // 
+            // second3Box
+            // 
+            this.second3Box.BackColor = System.Drawing.Color.Silver;
+            this.second3Box.Enabled = false;
+            this.second3Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second3Box.FormattingEnabled = true;
+            this.second3Box.Location = new System.Drawing.Point(416, 36);
+            this.second3Box.Name = "second3Box";
+            this.second3Box.Size = new System.Drawing.Size(121, 32);
+            this.second3Box.TabIndex = 6;
+            this.second3Box.Visible = false;
             // 
             // armorPanel
             // 
@@ -240,92 +326,6 @@
             this.otherPanel.Name = "otherPanel";
             this.otherPanel.Size = new System.Drawing.Size(607, 79);
             this.otherPanel.TabIndex = 15;
-            // 
-            // primay3Button
-            // 
-            this.primay3Button.AutoSize = true;
-            this.primay3Button.BackColor = System.Drawing.Color.Transparent;
-            this.primay3Button.Enabled = false;
-            this.primay3Button.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.primay3Button.Location = new System.Drawing.Point(416, 15);
-            this.primay3Button.Name = "primay3Button";
-            this.primay3Button.Size = new System.Drawing.Size(14, 13);
-            this.primay3Button.TabIndex = 2;
-            this.primay3Button.TabStop = true;
-            this.primay3Button.UseVisualStyleBackColor = false;
-            this.primay3Button.Visible = false;
-            // 
-            // primary3Box
-            // 
-            this.primary3Box.BackColor = System.Drawing.Color.Silver;
-            this.primary3Box.Enabled = false;
-            this.primary3Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.primary3Box.FormattingEnabled = true;
-            this.primary3Box.Location = new System.Drawing.Point(416, 34);
-            this.primary3Box.Name = "primary3Box";
-            this.primary3Box.Size = new System.Drawing.Size(121, 32);
-            this.primary3Box.TabIndex = 0;
-            this.primary3Box.Visible = false;
-            // 
-            // primary2Box
-            // 
-            this.primary2Box.BackColor = System.Drawing.Color.Silver;
-            this.primary2Box.Enabled = false;
-            this.primary2Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.primary2Box.FormattingEnabled = true;
-            this.primary2Box.Location = new System.Drawing.Point(235, 34);
-            this.primary2Box.Name = "primary2Box";
-            this.primary2Box.Size = new System.Drawing.Size(121, 32);
-            this.primary2Box.TabIndex = 3;
-            this.primary2Box.Visible = false;
-            // 
-            // primary1Box
-            // 
-            this.primary1Box.BackColor = System.Drawing.Color.Silver;
-            this.primary1Box.Enabled = false;
-            this.primary1Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.primary1Box.FormattingEnabled = true;
-            this.primary1Box.Location = new System.Drawing.Point(54, 34);
-            this.primary1Box.Name = "primary1Box";
-            this.primary1Box.Size = new System.Drawing.Size(121, 32);
-            this.primary1Box.TabIndex = 4;
-            this.primary1Box.Visible = false;
-            // 
-            // second3Box
-            // 
-            this.second3Box.BackColor = System.Drawing.Color.Silver;
-            this.second3Box.Enabled = false;
-            this.second3Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.second3Box.FormattingEnabled = true;
-            this.second3Box.Location = new System.Drawing.Point(416, 36);
-            this.second3Box.Name = "second3Box";
-            this.second3Box.Size = new System.Drawing.Size(121, 32);
-            this.second3Box.TabIndex = 6;
-            this.second3Box.Visible = false;
-            // 
-            // second2Box
-            // 
-            this.second2Box.BackColor = System.Drawing.Color.Silver;
-            this.second2Box.Enabled = false;
-            this.second2Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.second2Box.FormattingEnabled = true;
-            this.second2Box.Location = new System.Drawing.Point(235, 36);
-            this.second2Box.Name = "second2Box";
-            this.second2Box.Size = new System.Drawing.Size(121, 32);
-            this.second2Box.TabIndex = 7;
-            this.second2Box.Visible = false;
-            // 
-            // second1Box
-            // 
-            this.second1Box.BackColor = System.Drawing.Color.Silver;
-            this.second1Box.Enabled = false;
-            this.second1Box.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.second1Box.FormattingEnabled = true;
-            this.second1Box.Location = new System.Drawing.Point(54, 36);
-            this.second1Box.Name = "second1Box";
-            this.second1Box.Size = new System.Drawing.Size(121, 32);
-            this.second1Box.TabIndex = 8;
-            this.second1Box.Visible = false;
             // 
             // equipScreen
             // 
@@ -368,7 +368,7 @@
         private System.Windows.Forms.ComboBox primary1Box;
         private System.Windows.Forms.ComboBox primary2Box;
         private System.Windows.Forms.ComboBox primary3Box;
-        private System.Windows.Forms.RadioButton primay3Button;
+        private System.Windows.Forms.RadioButton primary3Button;
         private System.Windows.Forms.Panel secondPanel;
         private System.Windows.Forms.ComboBox second1Box;
         private System.Windows.Forms.ComboBox second2Box;

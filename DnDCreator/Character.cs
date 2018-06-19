@@ -16,23 +16,25 @@ namespace DnDCreator
         public static List<string> proficiencies = new List<string>();
         public static List<string> traits = new List<string>();
         public static List<weapons> weapon = new List<weapons>();
+        public static List<string> clickedWeapons = new List<string>();
 
 
-        public static string name, race, type, background;
+        public string name, race, type, background;
 
-        public static int strength, dexterity, constitution, inteligence, wisdom, charisma;
+        public int strength, dexterity, constitution, inteligence, wisdom, charisma;
 
-        public static int armorClass, speed, hitPoints;
+        public  int armorClass, speed, hitPoints;
 
-        public static int strMod, dexMod, constMod, intMod, wisMod, chaMod = 0;
+        public  int strMod, dexMod, constMod, intMod, wisMod, chaMod = 0;
 
-        public static int strST, dexST, constST, intST, wisST, chaST;
+        public  int strST, dexST, constST, intST, wisST, chaST;
 
-        public static int proficiency = 2;
+        public  int proficiency = 2;
 
-        public static string hitDie;
+        public  string hitDie;
 
-
+        public Character()
+        { }
 
         public Character(string _name, string _race, string _type, string _background, int _strST, int _dexST, int _constST, int _intST, int _wisST, int _chaST,int _proficiency, int _strength, int _dexterity, int _constitution, int _inteligence, int _wisdom, int _charisma, int _armorClass, int _speed, int _hitPoints, string _hitDie, int _strMod, int _dexMod, int _constMod, int _intMod, int _wisMod, int _chaMod, List<string> _skills, List<string> _languages, List<string> _proficiencies, List<string> _equipment, List<string> _traits, List<weapons> _weapon)
         {

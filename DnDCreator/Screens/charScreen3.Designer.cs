@@ -125,6 +125,7 @@
             this.athButton.TabIndex = 25;
             this.athButton.Text = "Athletics";
             this.athButton.UseVisualStyleBackColor = true;
+            this.athButton.CheckedChanged += new System.EventHandler(this.athButton_CheckedChanged_1);
             // 
             // stealthButton
             // 

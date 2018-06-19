@@ -37,12 +37,12 @@ namespace DnDCreator
         {
             InitializeComponent();
 
-            strSum = Character.strength;
-            dexSum = Character.dexterity;
-            constSum = Character.constitution;
-            intSum = Character.inteligence;
-            wisSum = Character.wisdom;
-            chaSum = Character.charisma;
+            strSum = Form1.newCharacter.strength;
+            dexSum = Form1.newCharacter.dexterity;
+            constSum = Form1.newCharacter.constitution;
+            intSum = Form1.newCharacter.inteligence;
+            wisSum = Form1.newCharacter.wisdom;
+            chaSum = Form1.newCharacter.charisma;
            
         }
        
